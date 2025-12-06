@@ -1,0 +1,24 @@
+@import "config/reset";
+@import "config/media-breakpoints";
+@import "config/fonts";
+@import "config/var";
+
+body{
+  font-family: Rubik,sans-serif;
+}
+
+.container{
+  max-width: 1490px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include media-breakpoint-down(md) {
+    padding: 0 45px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 0 15px;
+  }
+}
+
+@import "components/header";
